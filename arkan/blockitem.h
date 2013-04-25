@@ -2,14 +2,14 @@
 #define BLOCKITEM_H
 
 #include <QtGui>
-
+//Size of blocks (width/height)
 const int block_w_c = 64;
 const int block_h_c = 32;
 
 enum CustomItemTypes {
     CUSTOMITEMTYPE_BLOCK = QGraphicsItem::UserType + 1
 };
-
+//Different types of blocks
 class BlockItem : public QGraphicsRectItem {
 public:
     enum BlockType {

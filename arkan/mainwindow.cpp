@@ -430,7 +430,94 @@ void PlayingGamestate::initLevel() {
         levelData += "        ";
         levelData += "        ";
     }
-
+    else if( mlevel == 2 ) {
+        levelData += " w bb g ";
+        levelData += "   bb   ";
+        levelData += "rrrbbrrr";
+        levelData += "rrrbbrrr";
+        levelData += "   bb   ";
+        levelData += " p    p ";
+    }
+    else if( mlevel == 3 ) {
+        levelData += "        ";
+        levelData += "bbbbbbbb";
+        levelData += "rrrpgrrr";
+        levelData += "orrrrrro";
+        levelData += "xxxxxxxx";
+        levelData += "        ";
+    }
+    else if( mlevel == 4 ) {
+        levelData += "bbbbbbbb";
+        levelData += "rrrrrrrr";
+        levelData += " w   o  ";
+        levelData += " p   p  ";
+        levelData += "rrrrrrrr";
+        levelData += "bbbbbbbb";
+    }
+    else if( mlevel == 5 ) {
+        levelData += "b      b";
+        levelData += "b  xx  b";
+        levelData += "b  gp  b";
+        levelData += "bb rr bb";
+        levelData += " b    b ";
+        levelData += " bbprbb ";
+    }
+    else if( mlevel == 6 ) {
+        levelData += " b   bb ";
+        levelData += " xx  xx ";
+        levelData += "    r   ";
+        levelData += "    x  r";
+        levelData += " r     x";
+        levelData += " x      ";
+    }
+    else if( mlevel == 7 ) {
+        levelData += " b b b b";
+        levelData += "b brbrb ";
+        levelData += " brbobrb";
+        levelData += "b brbrb ";
+        levelData += " b b b b";
+        levelData += "b b b b ";
+    }
+    else if( mlevel == 8 ) {
+        levelData += "prbrbrbg";
+        levelData += "brbrbrbr";
+        levelData += "brbrbrbr";
+        levelData += "brbrbrbr";
+        levelData += "wrbrbrbo";
+        levelData += "xrxrxrxr";
+    }
+    else if( mlevel == 9 ) {
+        levelData += " p    p ";
+        levelData += " r pp r ";
+        levelData += " w pp w ";
+        levelData += " r pp r ";
+        levelData += " w pp w ";
+        levelData += " p    p ";
+    }
+    else if( mlevel == 10 ) {
+        levelData += "rorororo";
+        levelData += "orororor";
+        levelData += "pppppppp";
+        levelData += "bbbbbbbb";
+        levelData += "rrrrrrrr";
+        levelData += "xxxxxxxx";
+    }
+    else if( mlevel == 11 ) {
+        levelData += "xrrrxorr";
+        levelData += "xrxbxbxr";
+        levelData += "xrxoxbxr";
+        levelData += "xrxgxbxr";
+        levelData += "xpxbbbxr";
+        levelData += "xoxxxxxr";
+    }
+    /*else if( mlevel ==  ) {
+        levelData += "        ";
+        levelData += "        ";
+        levelData += "        ";
+        levelData += "        ";
+        levelData += "        ";
+        levelData += "        ";
+    }*/
     qDebug("levelData length: %d", levelData.length());
     Q_ASSERT(levelData.length() == n_blocks_x * n_blocks_y);
 
